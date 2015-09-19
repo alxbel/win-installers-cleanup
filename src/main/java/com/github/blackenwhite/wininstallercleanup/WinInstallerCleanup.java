@@ -1,31 +1,23 @@
 package com.github.blackenwhite.wininstallercleanup;
 
-/**
- * Created on 15.09.2015.
- */
-import javax.swing.*;
 import java.io.*;
 import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.prefs.Preferences;
 
 /**
  * Created on 14.09.2015.
  */
 public class WinInstallerCleanup {
-	public static final String SCRIPT_RUNNER 			= "cscript";
-	public static final String VBSCRIPT 				= "/script.vbs";
-	public static final String TEMP_SCRIPT_NAME 		= "tmpscript";
-	public static final String TEMP_SCRIPT_EXTENSION 	= ".vbs";
-	public static final String BEGIN_OF_OUTPUT 			= "###begin###";
-	public static final String END_OF_OUTPUT 			= "###end###";
-	public static final String INSTALLER_FOLDER 		= "C:\\Windows\\Installer";
-//	public static final String INSTALLER_FOLDER 		= "E:\\tmp";
-//	public static final String ERROR_PERMISSIONS_TITLE	= "Not enough permissions";
-//	public static final String ERROR_PERMISSIONS_MESAGE = "Please run start.cmd as administrator";
+	public static final String SCRIPT_RUNNER = "cscript";
+	public static final String VBSCRIPT = "/script.vbs";
+	public static final String TEMP_SCRIPT_NAME = "tmpscript";
+	public static final String TEMP_SCRIPT_EXTENSION = ".vbs";
+	public static final String BEGIN_OF_OUTPUT = "###begin###";
+	public static final String END_OF_OUTPUT = "###end###";
+	public static final String INSTALLER_FOLDER = "C:\\Windows\\Installer";
 
 	private String tempScript;
 	private ArrayList<String> registeredPatches;

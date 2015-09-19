@@ -105,7 +105,6 @@ public class MainWindow extends JPanel {
 		delBtn = new JButton(DELETE_BUTTON_LABEL);
 		delBtn.setEnabled(false);
 
-		final MainWindow window = this;
 		delBtn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -182,7 +181,6 @@ public class MainWindow extends JPanel {
 		frame.setLocation(x, y);
 	}
 
-
 	private static void checkIfAdmin(){
 		Preferences prefs = Preferences.systemRoot();
 		try {
@@ -201,7 +199,7 @@ public class MainWindow extends JPanel {
 		//creating and showing this application's GUI.
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-//				checkIfAdmin();
+				checkIfAdmin();
 				createAndShowGUI();
 			}
 		});
