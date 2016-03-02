@@ -1,4 +1,4 @@
-# WinInstallersCleanup
+# Win Installers Cleanup
 DESCRIPTION
 
 WinInstallersCleanup is a tool for:
