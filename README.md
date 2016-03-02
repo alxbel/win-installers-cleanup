@@ -1,7 +1,7 @@
 # Win Installers Cleanup
-DESCRIPTION
+##DESCRIPTION
 
-WinInstallersCleanup is a tool for:
+Win Installers Cleanup is a tool for:
 
 * Identify orphaned patches and files in %WINDIR%\Installer folder 
 * Backup those files to disk drive different from system drive
@@ -12,7 +12,7 @@ installations. This tool works only with system drives labeled as "C:\".
 
 
 
-USAGE
+##USAGE
 
 To execute, RMB on Start.cmd and choose 'Run as administrator'. If backup is needed, check
 the box and select backup folder. Then hit 'Scan' to identify orphaned patches. If found,
